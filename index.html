@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matsanela AI Chat - Asisten Edukasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="header-icon">🎓</div>
+            <h1>Matsanela AI <span class="ai-label">Asisten Edukasi</span></h1>
+            <button id="clearChatBtn" class="clear-chat-btn" title="Hapus Tampilan Chat">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </header>
+
+        <main class="chat-main" id="chatMain">
+            <div class="initial-message bubble ai-message bubble-enter-animation">
+                <p>Halo! Saya Matsanela AI, asisten edukasi Anda. Ada yang bisa saya bantu hari ini?</p>
+            </div>
+            <!-- Chat messages will be dynamically added here -->
+        </main>
+
+        <footer class="chat-footer">
+            <div class="file-preview-area" id="filePreviewArea">
+                <!-- File previews will be added here -->
+            </div>
+            <div class="input-area">
+                <label for="fileInput" class="attach-btn" title="Lampirkan Gambar">
+                    <i class="fas fa-paperclip"></i>
+                    <input type="file" id="fileInput" accept="image/*" multiple>
+                </label>
+                <input type="text" id="userInput" placeholder="Ketik pesan Anda..." class="user-input">
+                <button id="sendBtn" class="send-btn" title="Kirim Pesan">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
